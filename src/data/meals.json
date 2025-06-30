@@ -1,0 +1,202 @@
+
+[
+  {
+    "id": 1,
+    "name": "Classic Margherita Pizza",
+    "category": "Italian",
+    "type": "Lunch",
+    "diet": "Vegetarian",
+    "cookTime": "25 minutes",
+    "difficulty": "Easy",
+    "servings": 4,
+    "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=500&h=400&fit=crop",
+    "description": "A classic Italian pizza with fresh tomatoes, mozzarella, and basil",
+    "ingredients": [
+      "Pizza dough",
+      "Tomato sauce",
+      "Fresh mozzarella",
+      "Fresh basil leaves",
+      "Olive oil",
+      "Salt",
+      "Black pepper"
+    ],
+    "instructions": [
+      "Preheat oven to 475°F (245°C)",
+      "Roll out pizza dough on floured surface",
+      "Spread tomato sauce evenly over dough",
+      "Add torn mozzarella pieces",
+      "Drizzle with olive oil and season",
+      "Bake for 12-15 minutes until golden",
+      "Top with fresh basil before serving"
+    ],
+    "tags": ["italian", "pizza", "cheese", "tomato", "basil"]
+  },
+  {
+    "id": 2,
+    "name": "Chicken Tikka Masala",
+    "category": "Indian",
+    "type": "Dinner",
+    "diet": "Non-Vegetarian",
+    "cookTime": "45 minutes",
+    "difficulty": "Medium",
+    "servings": 4,
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&h=400&fit=crop",
+    "description": "Tender chicken in a rich, creamy tomato-based curry sauce",
+    "ingredients": [
+      "Chicken breast, cubed",
+      "Yogurt",
+      "Tomato puree",
+      "Heavy cream",
+      "Onion",
+      "Garlic",
+      "Ginger",
+      "Garam masala",
+      "Turmeric",
+      "Cumin",
+      "Paprika"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt and spices for 30 minutes",
+      "Cook marinated chicken until golden",
+      "Sauté onions, garlic, and ginger",
+      "Add tomato puree and spices",
+      "Simmer and add cooked chicken",
+      "Stir in cream and simmer for 10 minutes",
+      "Serve with rice or naan"
+    ],
+    "tags": ["indian", "chicken", "curry", "spicy", "cream"]
+  },
+  {
+    "id": 3,
+    "name": "Mediterranean Bowl",
+    "category": "Mediterranean",
+    "type": "Lunch",
+    "diet": "Vegetarian",
+    "cookTime": "20 minutes",
+    "difficulty": "Easy",
+    "servings": 2,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=400&fit=crop",
+    "description": "Fresh and healthy bowl with quinoa, vegetables, and tahini dressing",
+    "ingredients": [
+      "Quinoa",
+      "Cucumber",
+      "Cherry tomatoes",
+      "Red onion",
+      "Feta cheese",
+      "Olives",
+      "Lettuce",
+      "Tahini",
+      "Lemon juice",
+      "Olive oil"
+    ],
+    "instructions": [
+      "Cook quinoa according to package instructions",
+      "Chop all vegetables into bite-sized pieces",
+      "Mix tahini, lemon juice, and olive oil for dressing",
+      "Arrange quinoa in bowls",
+      "Top with vegetables and feta",
+      "Drizzle with tahini dressing",
+      "Serve immediately"
+    ],
+    "tags": ["mediterranean", "healthy", "quinoa", "vegetarian", "fresh"]
+  },
+  {
+    "id": 4,
+    "name": "Classic Pancakes",
+    "category": "American",
+    "type": "Breakfast",
+    "diet": "Vegetarian",
+    "cookTime": "15 minutes",
+    "difficulty": "Easy",
+    "servings": 4,
+    "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=500&h=400&fit=crop",
+    "description": "Fluffy American-style pancakes perfect for weekend mornings",
+    "ingredients": [
+      "All-purpose flour",
+      "Sugar",
+      "Baking powder",
+      "Salt",
+      "Milk",
+      "Eggs",
+      "Butter",
+      "Vanilla extract",
+      "Maple syrup"
+    ],
+    "instructions": [
+      "Mix dry ingredients in a large bowl",
+      "Whisk wet ingredients in separate bowl",
+      "Combine wet and dry ingredients until just mixed",
+      "Heat griddle or pan over medium heat",
+      "Pour batter to form pancakes",
+      "Cook until bubbles form, then flip",
+      "Serve hot with maple syrup"
+    ],
+    "tags": ["breakfast", "pancakes", "fluffy", "american", "sweet"]
+  },
+  {
+    "id": 5,
+    "name": "Thai Green Curry",
+    "category": "Thai",
+    "type": "Dinner",
+    "diet": "Non-Vegetarian",
+    "cookTime": "30 minutes",
+    "difficulty": "Medium",
+    "servings": 4,
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&h=400&fit=crop",
+    "description": "Aromatic Thai curry with chicken and vegetables in coconut milk",
+    "ingredients": [
+      "Chicken thighs",
+      "Green curry paste",
+      "Coconut milk",
+      "Thai eggplant",
+      "Bell peppers",
+      "Bamboo shoots",
+      "Thai basil",
+      "Fish sauce",
+      "Sugar",
+      "Lime leaves"
+    ],
+    "instructions": [
+      "Heat coconut milk in a wok",
+      "Add curry paste and cook until fragrant",
+      "Add chicken and cook until done",
+      "Add vegetables and remaining coconut milk",
+      "Season with fish sauce and sugar",
+      "Simmer until vegetables are tender",
+      "Garnish with Thai basil and serve with rice"
+    ],
+    "tags": ["thai", "curry", "coconut", "spicy", "chicken"]
+  },
+  {
+    "id": 6,
+    "name": "Caesar Salad",
+    "category": "Salad",
+    "type": "Lunch",
+    "diet": "Vegetarian",
+    "cookTime": "15 minutes",
+    "difficulty": "Easy",
+    "servings": 4,
+    "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=500&h=400&fit=crop",
+    "description": "Crisp romaine lettuce with classic Caesar dressing and croutons",
+    "ingredients": [
+      "Romaine lettuce",
+      "Parmesan cheese",
+      "Croutons",
+      "Mayonnaise",
+      "Lemon juice",
+      "Garlic",
+      "Anchovy paste",
+      "Worcestershire sauce",
+      "Black pepper"
+    ],
+    "instructions": [
+      "Wash and chop romaine lettuce",
+      "Make dressing with mayo, lemon, garlic, and anchovy",
+      "Add Worcestershire sauce and pepper",
+      "Toss lettuce with dressing",
+      "Top with Parmesan and croutons",
+      "Serve immediately"
+    ],
+    "tags": ["salad", "caesar", "lettuce", "parmesan", "fresh"]
+  }
+]
