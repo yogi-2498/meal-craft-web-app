@@ -1,6 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
-import { ChefHat, Sparkles, TrendingUp } from 'lucide-react';
+import { ChefHat, Sparkles, TrendingUp, LogOut } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { useAuth } from '@/contexts/AuthContext';
 import MealCard from '../components/MealCard';
 import MealDetail from '../components/MealDetail';
 import SearchBar from '../components/SearchBar';
@@ -23,10 +24,15 @@ interface Meal {
 }
 
 const Index = () => {
+  const { user, signOut } = useAuth();
   const [meals, setMeals] = useState<Meal[]>(mealsData);
   const [filteredMeals, setFilteredMeals] = useState<Meal[]>(mealsData);
   const [selectedMeal, setSelectedMeal] = useState<Meal | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSignOut = async () => {
+    await signOut();
+  };
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
@@ -80,19 +86,33 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-red-50 to-yellow-50">
+      {/* Header with Sign Out */}
+      <header className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <ChefHat className="w-8 h-8 text-orange-600" />
+            <h1 className="text-2xl font-bold text-gray-800">Meal Finder</h1>
+          </div>
+          <div className="flex items-center space-x-4">
+            <span className="text-gray-600">Welcome, {user?.email}</span>
+            <Button variant="outline" onClick={handleSignOut}>
+              <LogOut className="w-4 h-4 mr-2" />
+              Sign Out
+            </Button>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-red-600/20"></div>
-        <div className="relative container mx-auto px-4 py-20">
+        <div className="relative container mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <div className="flex items-center justify-center mb-6">
-              <ChefHat className="text-orange-600 mr-3" size={48} />
-              <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                Meal Finder
-              </h1>
-            </div>
+            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">
+              Discover Delicious Recipes
+            </h1>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-              Discover delicious recipes from around the world. Search by ingredients, cuisine, or dietary preferences.
+              Search by ingredients, cuisine, or dietary preferences to find your perfect meal.
             </p>
             <SearchBar onSearch={handleSearch} onFilterChange={handleFilterChange} />
           </div>
